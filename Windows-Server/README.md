@@ -5,5 +5,5 @@ Created by Lucas Afonso Kremer <br>
 <h4>Requirements:</h4>
 <pre>
   How to use:
-	a) Just import, i didn't use Windows, but the template it's working : )
+	a) Just import it, i don't use Windows but the template it's working : )
 </pre>
