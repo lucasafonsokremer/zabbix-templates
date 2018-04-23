@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.0</version>
+    <date>2018-04-23T16:56:01Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template--DC--TapeLibrary--IBM-TS3310</template>
+            <name>Template--DC--TapeLibrary--IBM-TS3310</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Connection</name>
+                </application>
+                <application>
+                    <name>Drive</name>
+                </application>
+                <application>
+                    <name>General Status</name>
+                </application>
+                <application>
+                    <name>Hardware</name>
+                </application>
+                <application>
+                    <name>Power</name>
+                </application>
+                <application>
+                    <name>Robot</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Global Status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.1.8.0</snmp_oid>
+                    <key>GlobalStatus</key>
+                    <delay>300</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>RASSubSystemStatus (INTEGER) {&#13;
+ good( 1 ),&#13;
+ failed( 2 ),&#13;
+ degraded( 3 ),&#13;
+ warning( 4 ),&#13;
+ informational( 5 ),&#13;
+ unknown( 6 ),&#13;
+ invalid( 7 )&#13;
+}</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>General Status</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Ping</name>
+                    <type>3</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>icmpping[{HOST.CONN},10,2000,32,2000]</key>
+                    <delay>900</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Connection</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Door State</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.14.2.0</snmp_oid>
+                    <key>TAPE-Door-state</key>
+                    <delay>300</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>LibraryDoorStatus (not I/O) &#13;
+{&#13;
+open( 1 ),&#13;
+closed( 2 ),&#13;
+unknown( 3 )&#13;
+}</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Drive 1 cartridge loads</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.11.3.1.16.1</snmp_oid>
+                    <key>TAPE-drv1-cart-loads</key>
+                    <delay>43200</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Total cartridge loads for the drive.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Drive 1 need cleaning</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.11.3.1.12.1</snmp_oid>
+                    <key>TAPE-drv1-need-cleaning</key>
+                    <delay>3600</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>required( 1 )&#13;
+notRequired( 2 )&#13;
+immediate( 3 )</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Drive 1 serial number</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.11.3.1.17.1</snmp_oid>
+                    <key>TAPE-drv1-serial-number</key>
+                    <delay>43200</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Drive 1 physical serial number</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Drive 2 cartridge loads</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.11.3.1.16.2</snmp_oid>
+                    <key>TAPE-drv2-cart-loads</key>
+                    <delay>43200</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Total cartridge loads for the drive.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Drive 2 need cleaning</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.11.3.1.12.2</snmp_oid>
+                    <key>TAPE-drv2-need-cleaning</key>
+                    <delay>3600</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>required( 1 )&#13;
+notRequired( 2 )&#13;
+immediate( 3 )</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Drive 2 serial number</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.11.3.1.17.2</snmp_oid>
+                    <key>TAPE-drv2-serial-number</key>
+                    <delay>43200</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Drive 2 physical serial number</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Drive 3 cartridge loads</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.11.3.1.16.3</snmp_oid>
+                    <key>TAPE-drv3-cart-loads</key>
+                    <delay>43200</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Total cartridge loads for the drive.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Drive 3 need cleaning</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.11.3.1.12.3</snmp_oid>
+                    <key>TAPE-drv3-need-cleaning</key>
+                    <delay>3600</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Drive 3 needs Cleaning</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Drive 3 serial number</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.11.3.1.17.3</snmp_oid>
+                    <key>TAPE-drv3-serial-number</key>
+                    <delay>43200</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Drive 3 physical serial number</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Exp Door State</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.14.3.0</snmp_oid>
+                    <key>TAPE-Imp-Exp-Door-State</key>
+                    <delay>300</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>opened( 1 ),&#13;
+ closedAndLocked( 2 ),&#13;
+ closedAndUnLocked( 3 )</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>General Status</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Physical drive</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.14.6.0</snmp_oid>
+                    <key>TAPE-Phy-drv</key>
+                    <delay>43200</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Quantity of physical drives</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Operator is required</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.12.8.0</snmp_oid>
+                    <key>TAPE-RAS-action-request</key>
+                    <delay>3600</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>If operator Action is required.&#13;
+&#13;
+yes (1)&#13;
+no (2)</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>General Status</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Control status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.12.3.0</snmp_oid>
+                    <key>TAPE-RAS-control-status</key>
+                    <delay>3600</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Indicate overall control subsystem status.&#13;
+&#13;
+RASSubSystemStatus (INTEGER) {&#13;
+good( 1 ),&#13;
+failed( 2 ),&#13;
+degraded( 3 ),&#13;
+warning( 4 ),&#13;
+informational( 5 ),&#13;
+unknown( 6 ),&#13;
+invalid( 7 )&#13;
+}</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>General Status</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Cooling status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.12.2.0</snmp_oid>
+                    <key>TAPE-RAS-cooling-status</key>
+                    <delay>3600</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Indicates overall cooling fans Status.&#13;
+&#13;
+RASSubSystemStatus (INTEGER) {&#13;
+good( 1 ),&#13;
+failed( 2 ),&#13;
+degraded( 3 ),&#13;
+warning( 4 ),&#13;
+informational( 5 ),&#13;
+unknown( 6 ),&#13;
+invalid( 7 )&#13;
+}</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Hardware</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Drive status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.12.7.0</snmp_oid>
+                    <key>TAPE-RAS-drive-status</key>
+                    <delay>3600</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Indicates overall drive Status&#13;
+&#13;
+RASSubSystemStatus (INTEGER) {&#13;
+good( 1 ),&#13;
+failed( 2 ),&#13;
+degraded( 3 ),&#13;
+warning( 4 ),&#13;
+informational( 5 ),&#13;
+unknown( 6 ),&#13;
+invalid( 7 )&#13;
+}</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Overall media status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.12.6.0</snmp_oid>
+                    <key>TAPE-RAS-media-status</key>
+                    <delay>3600</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Indicates overall media Status&#13;
+&#13;
+RASSubSystemStatus (INTEGER) {&#13;
+good( 1 ),&#13;
+failed( 2 ),&#13;
+degraded( 3 ),&#13;
+warning( 4 ),&#13;
+informational( 5 ),&#13;
+unknown( 6 ),&#13;
+invalid( 7 )&#13;
+}</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Power status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.12.1.0</snmp_oid>
+                    <key>TAPE-RAS-power-status</key>
+                    <delay>3600</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Indicates overall power supply Status&#13;
+&#13;
+RASSubSystemStatus (INTEGER) {&#13;
+good( 1 ),&#13;
+failed( 2 ),&#13;
+degraded( 3 ),&#13;
+warning( 4 ),&#13;
+informational( 5 ),&#13;
+unknown( 6 ),&#13;
+invalid( 7 )&#13;
+}</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Robot status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.12.5.0</snmp_oid>
+                    <key>TAPE-RAS-robot-status</key>
+                    <delay>3600</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Indicates overall robotics Status&#13;
+&#13;
+RASSubSystemStatus (INTEGER) {&#13;
+good( 1 ),&#13;
+failed( 2 ),&#13;
+degraded( 3 ),&#13;
+warning( 4 ),&#13;
+informational( 5 ),&#13;
+unknown( 6 ),&#13;
+invalid( 7 )&#13;
+}</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Robot</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Serial Number</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.1.5.0</snmp_oid>
+                    <key>TAPE-Serial_Number</key>
+                    <delay>7200</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>General Status</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Storage slots</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>.1.3.6.1.4.1.3764.1.10.10.14.4.0</snmp_oid>
+                    <key>TAPE-Sto-slots</key>
+                    <delay>7200</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Number of storage slots.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Drive</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <macros>
+                <macro>
+                    <macro>{$SNMP_COMMUNITY}</macro>
+                    <value>public</value>
+                </macro>
+            </macros>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template--DC--TapeLibrary--IBM-TS3310:TAPE-Door-state.last(#1)}&lt;&gt;2</expression>
+            <name>Door Status on {HOSTNAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template--DC--TapeLibrary--IBM-TS3310:TAPE-drv1-need-cleaning.last(#1)}&lt;&gt;2</expression>
+            <name>Drive 1 needs cleaning on {HOSTNAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template--DC--TapeLibrary--IBM-TS3310:TAPE-drv2-need-cleaning.last(#1)}&lt;&gt;2</expression>
+            <name>Drive 2 needs cleaning on {HOSTNAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template--DC--TapeLibrary--IBM-TS3310:TAPE-drv3-need-cleaning.last(#1)}&lt;&gt;2</expression>
+            <name>Drive 3 needs cleaning on {HOSTNAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template--DC--TapeLibrary--IBM-TS3310:TAPE-RAS-control-status.last(#1)}&lt;&gt;1 or {Template--DC--TapeLibrary--IBM-TS3310:TAPE-RAS-cooling-status.last(#1)}&lt;&gt;1 or {Template--DC--TapeLibrary--IBM-TS3310:TAPE-RAS-drive-status.max(#1)}&lt;&gt;1 or {Template--DC--TapeLibrary--IBM-TS3310:TAPE-RAS-media-status.last(#1)}&lt;&gt;1 or {Template--DC--TapeLibrary--IBM-TS3310:TAPE-RAS-power-status.last(#1)}&lt;&gt;1 or {Template--DC--TapeLibrary--IBM-TS3310:TAPE-RAS-robot-status.max(#1)}&lt;&gt;1</expression>
+            <name>General hardware status on {HOSTNAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>good( 1 ),&#13;
+ failed( 2 ),&#13;
+ degraded( 3 ),&#13;
+ warning( 4 ),&#13;
+ informational( 5 ),&#13;
+ unknown( 6 ),&#13;
+ invalid( 7 )</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template--DC--TapeLibrary--IBM-TS3310:GlobalStatus.last(#1)}&lt;&gt;1</expression>
+            <name>Global Status changed on {HOSTNAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>good( 1 ),&#13;
+ failed( 2 ),&#13;
+ degraded( 3 ),&#13;
+ warning( 4 ),&#13;
+ informational( 5 ),&#13;
+ unknown( 6 ),&#13;
+ invalid( 7 )</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template--DC--TapeLibrary--IBM-TS3310:icmpping[{HOST.CONN},10,2000,32,2000].last()}&lt;&gt;1</expression>
+            <name>Lost connection on {HOSTNAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template--DC--TapeLibrary--IBM-TS3310:TAPE-RAS-action-request.last(#3)}&lt;&gt;2</expression>
+            <name>Operator Action Request on {HOSTNAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+    </triggers>
+</zabbix_export>
