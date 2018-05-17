@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.4</version>
-    <date>2018-02-15T19:26:13Z</date>
+    <date>2018-05-17T17:41:56Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -11,7 +11,9 @@
         <template>
             <template>Template Linux -- APP -- SELinux -- ACTIVE</template>
             <name>Template Linux -- APP -- SELinux -- ACTIVE</name>
-            <description/>
+            <description>Check SELinux status.&#13;
+Need user parameter:&#13;
+UserParameter=selinux.status,getenforce</description>
             <groups>
                 <group>
                     <name>Templates</name>
@@ -29,7 +31,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>log[/var/log/messages,&quot;sealert&quot;]</key>
-                    <delay>30</delay>
+                    <delay>30s</delay>
                     <history>15d</history>
                     <trends>0</trends>
                     <status>0</status>
@@ -71,7 +73,7 @@ Zabbix Agent needs read access to /var/log/messages.</description>
                     <snmp_community/>
                     <snmp_oid/>
                     <key>selinux.status</key>
-                    <delay>3600</delay>
+                    <delay>1h</delay>
                     <history>30d</history>
                     <trends>0</trends>
                     <status>0</status>
@@ -95,7 +97,7 @@ Zabbix Agent needs read access to /var/log/messages.</description>
                     <port/>
                     <description>Check SELinux status.&#13;
 Need user parameter:&#13;
-UserParameter=selinux.status[*],getenforce</description>
+UserParameter=selinux.status,getenforce</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
