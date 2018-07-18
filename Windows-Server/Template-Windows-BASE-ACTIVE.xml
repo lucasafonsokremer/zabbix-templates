@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.4</version>
-    <date>2018-02-15T17:32:05Z</date>
+    <date>2018-07-07T18:09:07Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -48,50 +48,6 @@ https://www.linkedin.com/in/lucasafonsokremer</description>
                 </application>
             </applications>
             <items>
-                <item>
-                    <name>Task Result - Atualiza_Zabbix_GPO</name>
-                    <type>7</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>check_tasks[Atualiza_Zabbix_GPO]</key>
-                    <delay>14400</delay>
-                    <history>14d</history>
-                    <trends>365d</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>General</name>
-                        </application>
-                        <application>
-                            <name>ZabbixAgent</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
-                </item>
                 <item>
                     <name>Disk Queue</name>
                     <type>7</type>
@@ -650,7 +606,24 @@ Checa a hora local do sistema.</description>
                             <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
-                    <trigger_prototypes/>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template-Windows-BASE-ACTIVE:net.if.in[{#IFNAME}].avg(4m)}&gt;{$WINDOWS_NETWORK_TRAFFIC_TOO_HIGH} or {Template-Windows-BASE-ACTIVE:net.if.out[{#IFNAME}].avg(4m)}&gt;{$WINDOWS_NETWORK_TRAFFIC_TOO_HIGH}</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>{HOSTNAME}: O trafego de rede está muito alto em {#IFNAME}</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                            <manual_close>1</manual_close>
+                            <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                    </trigger_prototypes>
                     <graph_prototypes>
                         <graph_prototype>
                             <name>Network traffic on {#IFNAME}</name>
@@ -736,51 +709,9 @@ Checa a hora local do sistema.</description>
                             </condition>
                         </conditions>
                     </filter>
-                    <lifetime>7d</lifetime>
+                    <lifetime>30d</lifetime>
                     <description>Discovery of file systems of different types as defined in global regular expression &quot;File systems for discovery&quot;.</description>
                     <item_prototypes>
-                        <item_prototype>
-                            <name>Free inodes on $1 (percentage)</name>
-                            <type>7</type>
-                            <snmp_community/>
-                            <snmp_oid/>
-                            <key>vfs.fs.inode[{#FSNAME},pfree]</key>
-                            <delay>600</delay>
-                            <history>7d</history>
-                            <trends>90d</trends>
-                            <status>1</status>
-                            <value_type>0</value_type>
-                            <allowed_hosts/>
-                            <units>%</units>
-                            <snmpv3_contextname/>
-                            <snmpv3_securityname/>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
-                            <params/>
-                            <ipmi_sensor/>
-                            <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
-                            <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>Filesystems</name>
-                                </application>
-                            </applications>
-                            <valuemap/>
-                            <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
-                            <application_prototypes/>
-                            <master_item_prototype/>
-                        </item_prototype>
                         <item_prototype>
                             <name>Free disk space on $1</name>
                             <type>7</type>
@@ -907,95 +838,37 @@ Checa a hora local do sistema.</description>
                             <application_prototypes/>
                             <master_item_prototype/>
                         </item_prototype>
-                        <item_prototype>
-                            <name>Used disk space on $1</name>
-                            <type>7</type>
-                            <snmp_community/>
-                            <snmp_oid/>
-                            <key>vfs.fs.size[{#FSNAME},used]</key>
-                            <delay>600</delay>
-                            <history>7d</history>
-                            <trends>90d</trends>
-                            <status>1</status>
-                            <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units>B</units>
-                            <snmpv3_contextname/>
-                            <snmpv3_securityname/>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
-                            <params/>
-                            <ipmi_sensor/>
-                            <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
-                            <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>Filesystems</name>
-                                </application>
-                            </applications>
-                            <valuemap/>
-                            <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
-                            <application_prototypes/>
-                            <master_item_prototype/>
-                        </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template-Windows-BASE-ACTIVE:vfs.fs.size[{#FSNAME},pfree].last(0)}&lt;{$FS_FREE_SPACE_HIGH} and {Template-Windows-BASE-ACTIVE:vfs.fs.size[{#FSNAME},pfree].last(#1)}&lt;{$FS_FREE_SPACE_HIGH} and {Template-Windows-BASE-ACTIVE:vfs.fs.size[{#FSNAME},pfree].last(#2)}&lt;{$FS_FREE_SPACE_HIGH}</expression>
+                            <expression>{Template-Windows-BASE-ACTIVE:vfs.fs.size[{#FSNAME},pfree].max(#2)}&lt;{$FS_FREE_SPACE_HIGH}</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Free disk space is less than {$FS_FREE_SPACE_HIGH}% on volume {#FSNAME}</name>
+                            <name>Espaço em disco livre está menor que {$FS_FREE_SPACE_HIGH}% em {#FSNAME}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
                             <status>0</status>
-                            <priority>5</priority>
-                            <description>Check if free disk space is less then {$FS_FREE_SPACE_HIGH} (wich is 5% by default on Windows BASE template) in the last 3 checks.</description>
+                            <priority>4</priority>
+                            <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
+                            <manual_close>1</manual_close>
                             <dependencies/>
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>({Template-Windows-BASE-ACTIVE:vfs.fs.size[{#FSNAME},pfree].last(0)}&lt;{$FS_FREE_SPACE_WARNING}) and ({Template-Windows-BASE-ACTIVE:vfs.fs.size[{#FSNAME},pfree].last(#1)}&lt;{$FS_FREE_SPACE_WARNING}) and ({Template-Windows-BASE-ACTIVE:vfs.fs.size[{#FSNAME},pfree].last(0)}&gt;{$FS_FREE_SPACE_HIGH})</expression>
+                            <expression>{Template-Windows-BASE-ACTIVE:vfs.fs.size[{#FSNAME},pfree].max(#2)}&lt;{$FS_FREE_SPACE_WARNING}</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Free disk space is less than {$FS_FREE_SPACE_WARNING}% on volume {#FSNAME}</name>
+                            <name>Espaço em disco livre está menor que {$FS_FREE_SPACE_WARNING}% em {#FSNAME}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
                             <status>0</status>
-                            <priority>2</priority>
-                            <description>Check if free disk space is less then {$FS_FREE_SPACE_WARNING} (wich is 10% by default on Windows BASE template) in the last 2 checks.</description>
-                            <type>0</type>
-                            <manual_close>0</manual_close>
-                            <dependencies/>
-                            <tags/>
-                        </trigger_prototype>
-                        <trigger_prototype>
-                            <expression>{Template-Windows-BASE-ACTIVE:vfs.fs.inode[{#FSNAME},pfree].last(0)}&lt;20</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
-                            <name>Free inodes is less than 20% on volume {#FSNAME}</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
-                            <url/>
-                            <status>1</status>
                             <priority>2</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
+                            <manual_close>1</manual_close>
                             <dependencies/>
                             <tags/>
                         </trigger_prototype>
@@ -1006,12 +879,12 @@ Checa a hora local do sistema.</description>
                             <width>600</width>
                             <height>340</height>
                             <yaxismin>0.0000</yaxismin>
-                            <yaxismax>0.0000</yaxismax>
+                            <yaxismax>100.0000</yaxismax>
                             <show_work_period>0</show_work_period>
-                            <show_triggers>0</show_triggers>
-                            <type>2</type>
+                            <show_triggers>1</show_triggers>
+                            <type>0</type>
                             <show_legend>1</show_legend>
-                            <show_3d>1</show_3d>
+                            <show_3d>0</show_3d>
                             <percent_left>0.0000</percent_left>
                             <percent_right>0.0000</percent_right>
                             <ymin_type_1>0</ymin_type_1>
@@ -1021,7 +894,7 @@ Checa a hora local do sistema.</description>
                             <graph_items>
                                 <graph_item>
                                     <sortorder>0</sortorder>
-                                    <drawtype>0</drawtype>
+                                    <drawtype>5</drawtype>
                                     <color>C80000</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
@@ -1033,7 +906,7 @@ Checa a hora local do sistema.</description>
                                 </graph_item>
                                 <graph_item>
                                     <sortorder>1</sortorder>
-                                    <drawtype>0</drawtype>
+                                    <drawtype>5</drawtype>
                                     <color>00C800</color>
                                     <yaxisside>0</yaxisside>
                                     <calc_fnc>2</calc_fnc>
@@ -1058,15 +931,19 @@ Checa a hora local do sistema.</description>
                 </macro>
                 <macro>
                     <macro>{$FS_FREE_SPACE_WARNING}</macro>
-                    <value>5</value>
+                    <value>7</value>
                 </macro>
                 <macro>
                     <macro>{$MEM_FREE_WARNING}</macro>
-                    <value>5</value>
+                    <value>10</value>
                 </macro>
                 <macro>
                     <macro>{$PROC_LOAD_MAX_PLUS}</macro>
                     <value>6</value>
+                </macro>
+                <macro>
+                    <macro>{$WINDOWS_NETWORK_TRAFFIC_TOO_HIGH}</macro>
+                    <value>150M</value>
                 </macro>
             </macros>
             <templates/>
@@ -1075,59 +952,10 @@ Checa a hora local do sistema.</description>
     </templates>
     <triggers>
         <trigger>
-            <expression>({Template-Windows-BASE-ACTIVE:vm.memory.size[pavailable].last(#1)}&lt;{$MEM_FREE_WARNING})and({Template-Windows-BASE-ACTIVE:vm.memory.size[pavailable].last(#2)}&lt;{$MEM_FREE_WARNING})</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>Free memory is less then {$MEM_FREE_WARNING} on {HOSTNAME}</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>5</priority>
-            <description>Memory usage is above 90%.&#13;
-Uso de memória acima de 90%</description>
-            <type>0</type>
-            <manual_close>1</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>{Template-Windows-BASE-ACTIVE:system.uname.diff(0)}&gt;0</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>Host information was changed on {HOSTNAME}</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>2</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>1</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>{Template-Windows-BASE-ACTIVE:system.cpu.load[,avg1].avg(#3)}&gt;{$PROC_LOAD_MAX_PLUS}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>Processor load is too high on {HOSTNAME}</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>2</priority>
-            <description>Check if processor LOAD is more then {$PROC_LOAD_MAX_PLUS} (padrão do template =5)</description>
-            <type>0</type>
-            <manual_close>1</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-        <trigger>
             <expression>{Template-Windows-BASE-ACTIVE:system.localtime.fuzzytime(60)}=0</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>System Time not synconized in {HOSTNAME}</name>
+            <name>Data e hora não está sincronizado em {HOSTNAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1141,15 +969,64 @@ Horário incorreto em {HOSTNAME}</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-Windows-BASE-ACTIVE:system.uptime.last(0)}&lt;600</expression>
+            <expression>{Template-Windows-BASE-ACTIVE:system.uname.diff(0)}&gt;0</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>{HOSTNAME} has just been restarted</name>
+            <name>Host information foi alterada em {HOSTNAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
             <status>0</status>
-            <priority>2</priority>
+            <priority>1</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template-Windows-BASE-ACTIVE:system.cpu.load[,avg1].avg(#3)}&gt;{$PROC_LOAD_MAX_PLUS}</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Load do processador está muito alto em {HOSTNAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Check if processor LOAD is more then {$PROC_LOAD_MAX_PLUS} (padrão do template =5)</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>({Template-Windows-BASE-ACTIVE:vm.memory.size[pavailable].last(#1)}&lt;{$MEM_FREE_WARNING})and({Template-Windows-BASE-ACTIVE:vm.memory.size[pavailable].last(#2)}&lt;{$MEM_FREE_WARNING})</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Memória livre está menor que {$MEM_FREE_WARNING}% em {HOSTNAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Memory usage is above 90%.&#13;
+Uso de memória acima de 90%</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template-Windows-BASE-ACTIVE:system.uptime.last(0)}&lt;600</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>{HOSTNAME} foi reiniciado</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>1</priority>
             <description/>
             <type>0</type>
             <manual_close>1</manual_close>
@@ -1181,7 +1058,7 @@ Horário incorreto em {HOSTNAME}</description>
             <graph_items>
                 <graph_item>
                     <sortorder>0</sortorder>
-                    <drawtype>0</drawtype>
+                    <drawtype>5</drawtype>
                     <color>0000BB</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
@@ -1193,7 +1070,7 @@ Horário incorreto em {HOSTNAME}</description>
                 </graph_item>
                 <graph_item>
                     <sortorder>1</sortorder>
-                    <drawtype>0</drawtype>
+                    <drawtype>5</drawtype>
                     <color>00DD00</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
@@ -1206,14 +1083,14 @@ Horário incorreto em {HOSTNAME}</description>
             </graph_items>
         </graph>
         <graph>
-            <name>Memory Usage</name>
+            <name>Uso de memoria</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
             <yaxismax>100.0000</yaxismax>
             <show_work_period>1</show_work_period>
             <show_triggers>1</show_triggers>
-            <type>1</type>
+            <type>0</type>
             <show_legend>1</show_legend>
             <show_3d>0</show_3d>
             <percent_left>0.0000</percent_left>
@@ -1225,7 +1102,7 @@ Horário incorreto em {HOSTNAME}</description>
             <graph_items>
                 <graph_item>
                     <sortorder>0</sortorder>
-                    <drawtype>0</drawtype>
+                    <drawtype>5</drawtype>
                     <color>0000BB</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
@@ -1237,7 +1114,7 @@ Horário incorreto em {HOSTNAME}</description>
                 </graph_item>
                 <graph_item>
                     <sortorder>1</sortorder>
-                    <drawtype>0</drawtype>
+                    <drawtype>5</drawtype>
                     <color>00EE00</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
