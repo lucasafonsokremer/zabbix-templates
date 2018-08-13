@@ -1,0 +1,2 @@
+# MPLS | require interface and IP
+UserParameter=script_mpls[*],sh /etc/zabbix/scripts/test_script.sh $1 $2
