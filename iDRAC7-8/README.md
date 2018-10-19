@@ -6,6 +6,7 @@ Created by Lucas Afonso Kremer <br>
 <pre>
   How to use:
 	a) Zabbix Server on version 3.0;
-	b) We are using this template on iDRAC version 7 and 8. 
+	b) Import the value maps first;
+	c) We are using this template on iDRAC version 7 and 8. 
 </pre>
 <b>Template created with base in https://github.com/kleinstuff/zabbixtemplates/tree/master/Template-SNMP-iDRAC7</b>

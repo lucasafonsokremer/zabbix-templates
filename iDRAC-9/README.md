@@ -6,7 +6,8 @@ Created by Lucas Afonso Kremer <br>
 <pre>
   How to use:
 	a) Zabbix Server on version 3.4;
-	b) We are using this template on iDRAC 9.
-	c) Tested on PowerEdge R440 with version 3.21.21.21
+	b) Import the value maps first;
+	c) We are using this template on iDRAC 9.
+	d) Tested on PowerEdge R440 with version 3.21.21.21
 </pre>
 
