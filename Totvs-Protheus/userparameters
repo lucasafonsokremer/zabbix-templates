@@ -1,3 +1,0 @@
-UserParameter=icmp_lost_percent[*],sh /etc/zabbix/scripts/icmp_lost_percent.sh $1 $2 $3 $4
-UserParameter=icmp_check[*], sh /etc/zabbix/scripts/icmp_check.sh $1 $2
-UserParameter=icmp_avg_rtt[*], sh /etc/zabbix/scripts/icmp_avg_rtt.sh $1

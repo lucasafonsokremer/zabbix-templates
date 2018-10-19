@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>3.4</version>
-    <date>2018-02-15T18:50:03Z</date>
+    <version>3.0</version>
+    <date>2016-07-22T19:12:54Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -48,15 +48,17 @@
                     <name>BIOS Date</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.300.50.1.7.1.1</snmp_oid>
                     <key>BiosDate</key>
                     <delay>86400</delay>
-                    <history>30d</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -64,8 +66,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -81,23 +86,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>BIOS Version</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.300.50.1.8.1.1</snmp_oid>
                     <key>BiosVersion</key>
                     <delay>86400</delay>
-                    <history>30d</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -105,8 +109,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -122,23 +129,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>CMOS Battery Status</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.50.1.5.1.1</snmp_oid>
                     <key>CMOSBatteryStatus</key>
                     <delay>3600</delay>
-                    <history>30d</history>
-                    <trends>365d</trends>
+                    <history>30</history>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -146,8 +152,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -165,23 +174,22 @@
                         <name>Dell Open Manage System Status</name>
                     </valuemap>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>Overall System LCD Status</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.2.2.0</snmp_oid>
                     <key>GlobalSystemLCDStatus</key>
                     <delay>3600</delay>
-                    <history>30d</history>
-                    <trends>365d</trends>
+                    <history>30</history>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -189,8 +197,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -208,23 +219,22 @@
                         <name>Dell Open Manage System Status</name>
                     </valuemap>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>Overall System Power State</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.2.4.0</snmp_oid>
                     <key>GlobalSystemPowerState</key>
                     <delay>3600</delay>
-                    <history>30d</history>
-                    <trends>365d</trends>
+                    <history>30</history>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -232,8 +242,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -251,23 +264,22 @@
                         <name>DellPowerState</name>
                     </valuemap>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>Overall System Rollup Status</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.2.1.0</snmp_oid>
                     <key>GlobalSystemRollupStatus</key>
                     <delay>3600</delay>
-                    <history>30d</history>
-                    <trends>365d</trends>
+                    <history>30</history>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -275,8 +287,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -294,23 +309,22 @@
                         <name>Dell Open Manage System Status</name>
                     </valuemap>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>Overall System Status</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.2.2.1.0</snmp_oid>
                     <key>GlobalSystemStatus</key>
                     <delay>300</delay>
-                    <history>30d</history>
-                    <trends>365d</trends>
+                    <history>30</history>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -318,8 +332,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -337,23 +354,22 @@
                         <name>Dell Open Manage System Status</name>
                     </valuemap>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>Overall System Storage Status</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.2.3.0</snmp_oid>
                     <key>GlobalSystemStorageStatus</key>
                     <delay>3600</delay>
-                    <history>30d</history>
-                    <trends>365d</trends>
+                    <history>30</history>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -361,8 +377,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -380,23 +399,22 @@
                         <name>Dell Open Manage System Status</name>
                     </valuemap>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>DRAC Access URL</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.2.1.1.7.0</snmp_oid>
                     <key>idrac_acessurl</key>
                     <delay>86400</delay>
-                    <history>30d</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -404,8 +422,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -421,23 +442,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>System Asset Tag</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.2.1.1.11.0</snmp_oid>
                     <key>idrac_assettag</key>
                     <delay>86400</delay>
-                    <history>30d</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -445,8 +465,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -462,23 +485,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>System Express Service Code</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.1.3.3.0</snmp_oid>
                     <key>idrac_esc</key>
                     <delay>86400</delay>
-                    <history>30d</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -486,8 +508,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -503,23 +528,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>DRAC Firmware version</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.2.1.1.5.0</snmp_oid>
                     <key>idrac_firmwareversion</key>
                     <delay>86400</delay>
-                    <history>30d</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -527,8 +551,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -544,23 +571,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>System Model</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.1.3.12.0</snmp_oid>
                     <key>idrac_SystemModel</key>
                     <delay>86400</delay>
-                    <history>30d</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -568,8 +594,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -585,23 +614,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>DRAC version</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.2.1.1.2.0</snmp_oid>
                     <key>idrac_version</key>
                     <delay>86400</delay>
-                    <history>30d</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -609,8 +637,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -626,23 +657,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>Power Usage Minimum Idle Power</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.60.1.15.1.1</snmp_oid>
                     <key>PowerUsageMinIdle</key>
                     <delay>3600</delay>
-                    <history>30d</history>
-                    <trends>365d</trends>
+                    <history>30</history>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>W</units>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -650,8 +680,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -667,23 +700,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>Power Usage Sensor Status</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.60.1.5.1.1</snmp_oid>
                     <key>PowerUsageSensorStatus</key>
                     <delay>3600</delay>
-                    <history>30d</history>
-                    <trends>365d</trends>
+                    <history>30</history>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -691,8 +723,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -710,23 +745,22 @@
                         <name>Dell Open Manage System Status</name>
                     </valuemap>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>RAID Controller : Firmware Version</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.1.1.8.1</snmp_oid>
                     <key>RAIDControllerFirmware</key>
                     <delay>86400</delay>
-                    <history>30d</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -734,8 +768,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -751,23 +788,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>RAID Controller : Name</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.1.1.2.1</snmp_oid>
                     <key>RAIDControllerName</key>
                     <delay>86400</delay>
-                    <history>30d</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -775,8 +811,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -792,23 +831,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>RAID Controller : Status</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.1.1.37.1</snmp_oid>
                     <key>RAIDControllerStatus</key>
                     <delay>600</delay>
-                    <history>30d</history>
-                    <trends>365d</trends>
+                    <history>30</history>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -816,8 +854,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -835,23 +876,22 @@
                         <name>Dell Open Manage System Status</name>
                     </valuemap>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>System BIOS Status</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.300.50.1.5.1.1</snmp_oid>
                     <key>SystemBiosStatus</key>
                     <delay>3600</delay>
-                    <history>30d</history>
-                    <trends>365d</trends>
+                    <history>30</history>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -859,8 +899,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -878,23 +921,22 @@
                         <name>Dell Open Manage System Status</name>
                     </valuemap>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>System Power State</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.2.4.0</snmp_oid>
                     <key>SystemPowerState</key>
                     <delay>300</delay>
-                    <history>30d</history>
+                    <history>30</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -902,8 +944,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -920,23 +965,22 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
                 <item>
                     <name>Voltage Status Combined</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.674.10892.5.4.200.10.1.12.1</snmp_oid>
                     <key>VoltageStatusCombined</key>
                     <delay>600</delay>
-                    <history>30d</history>
-                    <trends>365d</trends>
+                    <history>30</history>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -944,8 +988,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -963,9 +1010,6 @@
                         <name>Dell Open Manage System Status</name>
                     </valuemap>
                     <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <master_item/>
                 </item>
             </items>
             <discovery_rules>
@@ -985,6 +1029,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -998,22 +1043,24 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30d</lifetime>
+                    <lifetime>30</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Disk {#SNMPINDEX} : Manufacture Day</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.32.{#SNMPINDEX}</snmp_oid>
                             <key>DiskManufactureDay.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>7d</history>
-                            <trends>90d</trends>
+                            <history>7</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1021,8 +1068,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1038,24 +1088,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#SNMPINDEX} : Manufacturer</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>DiskManufacturer.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1063,8 +1112,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1080,24 +1132,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#SNMPINDEX} : Manufacture Week</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.33.{#SNMPINDEX}</snmp_oid>
                             <key>DiskManufactureWeek.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1105,8 +1156,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1122,24 +1176,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#SNMPINDEX} : Manufacture Year</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.34.{#SNMPINDEX}</snmp_oid>
                             <key>DiskManufactureYear.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1147,8 +1200,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1164,24 +1220,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#SNMPINDEX} : Model Number</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.6.{#SNMPINDEX}</snmp_oid>
                             <key>DiskModel.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1189,8 +1244,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1206,24 +1264,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#SNMPINDEX} : Name</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.55.{#SNMPINDEX}</snmp_oid>
                             <key>DiskName.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1231,8 +1288,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1248,24 +1308,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#SNMPINDEX} : Serial Number</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.7.{#SNMPINDEX}</snmp_oid>
                             <key>DiskSerialNo.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1273,8 +1332,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1290,24 +1352,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#SNMPINDEX} : Disk Size</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.11.{#SNMPINDEX}</snmp_oid>
                             <key>DiskSize.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>7d</history>
-                            <trends>90d</trends>
+                            <history>7</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>B</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1315,8 +1376,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1048576</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1332,29 +1396,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing>
-                                <step>
-                                    <type>1</type>
-                                    <params>1048576</params>
-                                </step>
-                            </preprocessing>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#SNMPINDEX} : Disk State</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.4.{#SNMPINDEX}</snmp_oid>
                             <key>DiskState.[{#SNMPINDEX}]</key>
                             <delay>3600</delay>
-                            <history>7d</history>
-                            <trends>90d</trends>
+                            <history>7</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1362,8 +1420,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1381,24 +1442,23 @@
                                 <name>DellDracDiskState</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Disk {#SNMPINDEX} : Disk Status</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.24.{#SNMPINDEX}</snmp_oid>
                             <key>DiskStatus.[{#SNMPINDEX}]</key>
                             <delay>3600</delay>
-                            <history>7d</history>
-                            <trends>90d</trends>
+                            <history>7</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1406,8 +1466,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1425,33 +1488,23 @@
                                 <name>Dell Open Manage System Status</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-7-8:DiskStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Problem with Disk {#SNMPINDEX}</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>5</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
-                    <jmx_endpoint/>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Fan Enumeration</name>
@@ -1469,6 +1522,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -1482,22 +1536,24 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30d</lifetime>
+                    <lifetime>30</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Fan {#SNMPVALUE} Speed</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.700.12.1.6.1.{#SNMPINDEX}</snmp_oid>
                             <key>FanSpeed.[{#SNMPINDEX}]</key>
                             <delay>300</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>rpm</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1505,8 +1561,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1522,24 +1581,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Fan {#SNMPVALUE} Status</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.700.12.1.5.1.{#SNMPINDEX}</snmp_oid>
                             <key>FanStatus.[{#SNMPINDEX}]</key>
                             <delay>300</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1547,8 +1605,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1566,28 +1627,19 @@
                                 <name>Dell Open Manage System Status</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-7-8:FanStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Problem with FAN {#SNMPVALUE}</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>3</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes>
@@ -1625,7 +1677,6 @@
                         </graph_prototype>
                     </graph_prototypes>
                     <host_prototypes/>
-                    <jmx_endpoint/>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Memory Enumeration</name>
@@ -1633,7 +1684,7 @@
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <snmp_oid>discovery[{#SNMPVALUE},1.3.6.1.4.1.674.10892.5.4.1100.50.1.8.1]</snmp_oid>
                     <key>MemoryEnum</key>
-                    <delay>86400;50/1-7,00:00-24:00</delay>
+                    <delay>86400</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -1643,6 +1694,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <delay_flex>50/1-7,00:00-24:00</delay_flex>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -1656,22 +1708,24 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30d</lifetime>
+                    <lifetime>30</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Memory Slot {#SNMPVALUE} Manufacturer</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.50.1.21.1.{#SNMPINDEX}</snmp_oid>
                             <key>MemManufacturer[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1679,8 +1733,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1696,24 +1753,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Memory Slot {#SNMPVALUE} Part Number</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.50.1.22.1.{#SNMPINDEX}</snmp_oid>
                             <key>MemPartlNo.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1721,8 +1777,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1738,24 +1797,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Memory Slot {#SNMPVALUE} Serial Number</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.50.1.23.1.{#SNMPINDEX}</snmp_oid>
                             <key>MemSerialNo.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1763,8 +1821,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1780,24 +1841,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Memory Slot {#SNMPVALUE} Size</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.50.1.14.1.{#SNMPINDEX}</snmp_oid>
                             <key>MemSize.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>B</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1805,8 +1865,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1024</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1822,29 +1885,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing>
-                                <step>
-                                    <type>1</type>
-                                    <params>1024</params>
-                                </step>
-                            </preprocessing>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Memory Slot {#SNMPVALUE} Speed</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.50.1.15.1.{#SNMPINDEX}</snmp_oid>
                             <key>MemSpeed.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>ns</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1852,8 +1909,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1869,24 +1929,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Memory Slot {#SNMPVALUE} Status</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.50.1.5.1.{#SNMPINDEX}</snmp_oid>
                             <key>MemStatus.[{#SNMPINDEX}]</key>
                             <delay>1800</delay>
-                            <history>7d</history>
-                            <trends>90d</trends>
+                            <history>7</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1894,8 +1953,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1913,33 +1975,23 @@
                                 <name>Dell Open Manage System Status</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-7-8:MemStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Problem with memory in slot {#SNMPVALUE}</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>1</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
-                    <jmx_endpoint/>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Network Enumeration</name>
@@ -1957,6 +2009,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -1970,22 +2023,24 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30d</lifetime>
+                    <lifetime>30</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>NIC {#SNMPINDEX} : Connection Status</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.90.1.4.1.{#SNMPINDEX}</snmp_oid>
                             <key>NetConnStatus.[{#SNMPINDEX}]</key>
                             <delay>600</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1993,8 +2048,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2012,24 +2070,23 @@
                                 <name>Dell iDRAC Network Device Connection Status</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>NIC {#SNMPINDEX} : MAC Address</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.90.1.15.1.{#SNMPINDEX}</snmp_oid>
                             <key>NetMAC.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2037,8 +2094,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2054,24 +2114,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>NIC {#SNMPINDEX} : Name</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.90.1.6.1.{#SNMPINDEX}</snmp_oid>
                             <key>NetName.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2079,8 +2138,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2096,24 +2158,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>NIC {#SNMPINDEX} : Slot</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.90.1.30.1.{#SNMPINDEX}</snmp_oid>
                             <key>NetSlot.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2121,8 +2182,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2138,24 +2202,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>NIC {#SNMPINDEX} : Status</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.90.1.3.1.{#SNMPINDEX}</snmp_oid>
                             <key>NetStatus.[{#SNMPINDEX}]</key>
                             <delay>300</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2163,8 +2226,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2182,49 +2248,33 @@
                                 <name>Dell Open Manage System Status</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-7-8:NetConnStatus.[{#SNMPINDEX}].diff(0)}=1) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Connection Status has changed on NIC {#SNMPINDEX}</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>1</status>
                             <priority>2</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-7-8:NetStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Error on NIC {#SNMPINDEX}</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>1</status>
                             <priority>5</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
-                    <jmx_endpoint/>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Power Supply Enumeration</name>
@@ -2242,6 +2292,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -2255,22 +2306,24 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30d</lifetime>
+                    <lifetime>30</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Power Supply {#SNMPINDEX} Input Voltage</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.12.1.9.1.{#SNMPINDEX}</snmp_oid>
                             <key>PowerSupplyInputVoltage.[{#SNMPINDEX}]</key>
                             <delay>300</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>V</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2278,8 +2331,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2295,24 +2351,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Power Supply {#SNMPINDEX} Maximum Power</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.12.1.6.1.{#SNMPINDEX}</snmp_oid>
                             <key>PowerSupplyMaxPower.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>W</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2320,8 +2375,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>.1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2337,29 +2395,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing>
-                                <step>
-                                    <type>1</type>
-                                    <params>.1</params>
-                                </step>
-                            </preprocessing>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Power Supply {#SNMPINDEX} Sensor State</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.12.1.11.1.{#SNMPINDEX}</snmp_oid>
                             <key>PowerSupplySensorState.[{#SNMPINDEX}]</key>
                             <delay>600</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2367,8 +2419,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2386,24 +2441,23 @@
                                 <name>Dell_PSU_SensorState</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Power Supply {#SNMPINDEX} State Settings</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.12.1.4.1.{#SNMPINDEX}</snmp_oid>
                             <key>PowerSupplyStateSettings.[{#SNMPINDEX}]</key>
                             <delay>600</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2411,8 +2465,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2430,24 +2487,23 @@
                                 <name>Dell PSU State Settings</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Power Supply {#SNMPINDEX} Status</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.12.1.5.1.{#SNMPINDEX}</snmp_oid>
                             <key>PowerSupplyStatus.[{#SNMPINDEX}]</key>
                             <delay>300</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2455,8 +2511,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2474,49 +2533,33 @@
                                 <name>Dell Open Manage System Status</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-7-8:PowerSupplySensorState.[{#SNMPINDEX}].last(0)}&lt;&gt;1) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Error on PSU {#SNMPINDEX} State</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>1</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-7-8:PowerSupplyStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Problem with PSU {#SNMPINDEX}</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>1</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
-                    <jmx_endpoint/>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Processor Enumeration</name>
@@ -2534,6 +2577,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -2547,22 +2591,24 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30d</lifetime>
+                    <lifetime>30</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Processor {#SNMPINDEX} Status</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.1100.32.1.5.1.{#SNMPINDEX}</snmp_oid>
                             <key>ProcStatus.[{#SNMPINDEX}]</key>
                             <delay>300</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2570,8 +2616,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2589,33 +2638,23 @@
                                 <name>Dell Open Manage System Status</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-7-8:ProcStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3 and {Template-SNMP-iDRAC-7-8:ProcStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;2) or ({Template-SNMP-iDRAC-7-8:ProcStatus.[{#SNMPINDEX}].last(86400)}&lt;&gt;2 and {Template-SNMP-iDRAC-7-8:ProcStatus.[{#SNMPINDEX}].last(0)}=2) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Error on Processor {#SNMPINDEX}</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>1</status>
                             <priority>5</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
-                    <jmx_endpoint/>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Temperature Enumeration</name>
@@ -2633,6 +2672,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -2646,22 +2686,24 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30d</lifetime>
+                    <lifetime>30</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Temperature Sensor {#SNMPVALUE} Critical Low-Limit</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.700.20.1.13.1.{#SNMPINDEX}</snmp_oid>
                             <key>TempCritLowLimit.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>C</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2669,8 +2711,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>0.1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2686,29 +2731,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing>
-                                <step>
-                                    <type>1</type>
-                                    <params>0.1</params>
-                                </step>
-                            </preprocessing>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Temperature Sensor {#SNMPVALUE} Critical Up-Limit</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.700.20.1.10.1.{#SNMPINDEX}</snmp_oid>
                             <key>TempCritUpLimit.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>C</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2716,8 +2755,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>0.1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2733,29 +2775,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing>
-                                <step>
-                                    <type>1</type>
-                                    <params>0.1</params>
-                                </step>
-                            </preprocessing>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Temperature Sensor {#SNMPVALUE} Status</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.700.20.1.5.1.{#SNMPINDEX}</snmp_oid>
                             <key>TempStatus.[{#SNMPINDEX}]</key>
                             <delay>300</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2763,8 +2799,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2782,24 +2821,23 @@
                                 <name>Dell Open Manage System Status</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Temperature Sensor {#SNMPVALUE} Value</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.700.20.1.6.1.{#SNMPINDEX}</snmp_oid>
                             <key>TempValue.[{#SNMPINDEX}]</key>
                             <delay>300</delay>
-                            <history>2d</history>
-                            <trends>90d</trends>
+                            <history>2</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>C</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2807,8 +2845,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>.1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2826,29 +2867,23 @@
                                 <name>Dell Open Manage System Status</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing>
-                                <step>
-                                    <type>1</type>
-                                    <params>.1</params>
-                                </step>
-                            </preprocessing>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Temperature Sensor {#SNMPVALUE} Warning Low-Limit</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.700.20.1.12.1.{#SNMPINDEX}</snmp_oid>
                             <key>TempWarnLowLimit.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>C</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2856,8 +2891,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>0.1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2873,29 +2911,23 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing>
-                                <step>
-                                    <type>1</type>
-                                    <params>0.1</params>
-                                </step>
-                            </preprocessing>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Temperature Sensor {#SNMPVALUE} Warning Up-Limit</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.700.20.1.11.1.{#SNMPINDEX}</snmp_oid>
                             <key>TempWarnUpLimit.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>C</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -2903,8 +2935,11 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>0.1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -2920,65 +2955,39 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing>
-                                <step>
-                                    <type>1</type>
-                                    <params>0.1</params>
-                                </step>
-                            </preprocessing>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>{Template-SNMP-iDRAC-7-8:TempStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Problem with Temperature Sensor {#SNMPVALUE}</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &gt;= {Template-SNMP-iDRAC-7-8:TempCritUpLimit.[{#SNMPINDEX}].last()}</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Temperature on {#SNMPVALUE} critically high</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>4</priority>
                             <description>Temperature of the item is above Critical Level.</description>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &lt;= {Template-SNMP-iDRAC-7-8:TempCritLowLimit.[{#SNMPINDEX}].last()}</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Temperature on {#SNMPVALUE} critically low</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>4</priority>
                             <description>Temperature of the item is below Critical Level.</description>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &gt; {Template-SNMP-iDRAC-7-8:TempWarnUpLimit.[{#SNMPINDEX}].last()}&#13;
@@ -2986,19 +2995,13 @@
 and&#13;
 &#13;
 {Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &lt; {Template-SNMP-iDRAC-7-8:TempCritUpLimit.[{#SNMPINDEX}].last()}</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Temperature on {#SNMPVALUE} to high</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
                             <description>Temperature of the item is above Warning Level.</description>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &lt; {Template-SNMP-iDRAC-7-8:TempWarnLowLimit.[{#SNMPINDEX}].last()}&#13;
@@ -3006,19 +3009,13 @@ and&#13;
 and&#13;
 &#13;
 {Template-SNMP-iDRAC-7-8:TempValue.[{#SNMPINDEX}].last()} &gt; {Template-SNMP-iDRAC-7-8:TempCritLowLimit.[{#SNMPINDEX}].last()}</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Temperature on {#SNMPVALUE} to low</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
                             <description>Temperature of the item is below Warning Level.</description>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes>
@@ -3056,7 +3053,6 @@ and&#13;
                         </graph_prototype>
                     </graph_prototypes>
                     <host_prototypes/>
-                    <jmx_endpoint/>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Voltage Table Enumeration</name>
@@ -3074,6 +3070,7 @@ and&#13;
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -3087,22 +3084,24 @@ and&#13;
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30d</lifetime>
+                    <lifetime>30</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Voltage : {#SNMPVALUE} Status</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.4.600.20.1.5.1.{#SNMPINDEX}</snmp_oid>
                             <key>VoltageStatus.[{#SNMPINDEX}]</key>
                             <delay>600</delay>
-                            <history>7d</history>
-                            <trends>90d</trends>
+                            <history>7</history>
+                            <trends>90</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -3110,8 +3109,11 @@ and&#13;
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -3129,33 +3131,23 @@ and&#13;
                                 <name>Dell Open Manage System Status</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-7-8:VoltageStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Error on Voltage Sensor {#SNMPVALUE}</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>3</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
-                    <jmx_endpoint/>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Disk Volume Enumeration</name>
@@ -3173,6 +3165,7 @@ and&#13;
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -3186,22 +3179,24 @@ and&#13;
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30d</lifetime>
+                    <lifetime>30</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Volume {#SNMPINDEX} : Virtual Disk State</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.140.1.1.4.{#SNMPINDEX}</snmp_oid>
                             <key>VolumeDiskState.[{#SNMPINDEX}]</key>
                             <delay>3600</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -3209,8 +3204,11 @@ and&#13;
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -3228,24 +3226,23 @@ and&#13;
                                 <name>DellRaidVolumeState</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Volume {#SNMPINDEX} : Name</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.140.1.1.36.{#SNMPINDEX}</snmp_oid>
                             <key>VolumeName.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -3253,8 +3250,11 @@ and&#13;
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -3270,24 +3270,23 @@ and&#13;
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Volume {#SNMPINDEX} : Size</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>1</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.140.1.1.6.{#SNMPINDEX}</snmp_oid>
                             <key>VolumeSize.[{#SNMPINDEX}]</key>
                             <delay>86400</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>B</units>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -3295,8 +3294,11 @@ and&#13;
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1048576</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -3312,29 +3314,23 @@ and&#13;
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing>
-                                <step>
-                                    <type>1</type>
-                                    <params>1048576</params>
-                                </step>
-                            </preprocessing>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Volume {#SNMPINDEX} : State</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.140.1.1.13.{#SNMPINDEX}</snmp_oid>
                             <key>VolumeState.[{#SNMPINDEX}]</key>
                             <delay>3600</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -3342,8 +3338,11 @@ and&#13;
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -3361,24 +3360,23 @@ and&#13;
                                 <name>DellRaidLevel</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>Volume {#SNMPINDEX} : Status</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.140.1.1.20.{#SNMPINDEX}</snmp_oid>
                             <key>VolumeStatus.[{#SNMPINDEX}]</key>
                             <delay>3600</delay>
-                            <history>90d</history>
+                            <history>90</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
+                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -3386,8 +3384,11 @@ and&#13;
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
+                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -3405,52 +3406,35 @@ and&#13;
                                 <name>Dell Open Manage System Status</name>
                             </valuemap>
                             <logtimefmt/>
-                            <preprocessing/>
-                            <jmx_endpoint/>
                             <application_prototypes/>
-                            <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-7-8:VolumeDiskState.[{#SNMPINDEX}].last(0)}&lt;&gt;2) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Volume {#SNMPINDEX} Error</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>1</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-7-8:VolumeStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Volume {#SNMPINDEX} Status Error</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>1</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
-                    <jmx_endpoint/>
                 </discovery_rule>
             </discovery_rules>
-            <httptests/>
             <macros/>
             <templates/>
             <screens/>
@@ -3459,185 +3443,118 @@ and&#13;
     <triggers>
         <trigger>
             <expression>{Template-SNMP-iDRAC-7-8:GlobalSystemStatus.nodata(600)}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>No iDrac data for &gt; 10 minutes</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>1</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemRollupStatus.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Overall System Rollup Status Error</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemRollupStatus.last(0)}&gt;4) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Overall System Rollup Status Error</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemStatus.last()}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:GlobalSystemStatus.last()}&lt;5)</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Overall System Status Error</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>1</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemStatus.last()}&gt;4)</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Overall System Status Error</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
-            <manual_close>1</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{Template-SNMP-iDRAC-7-8:CMOSBatteryStatus.last(0)}&lt;&gt;3</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Problem with CMOS Battery</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>1</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>({Template-SNMP-iDRAC-7-8:RAIDControllerStatus.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>RAID Controller Error</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>({Template-SNMP-iDRAC-7-8:GlobalSystemStorageStatus.last(0)}&gt;4) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Storage System Status Error</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{Template-SNMP-iDRAC-7-8:GlobalSystemStorageStatus.last(0)}&lt;&gt;3</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Storage System Status Error</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies>
                 <dependency>
                     <name>RAID Controller Error</name>
                     <expression>({Template-SNMP-iDRAC-7-8:RAIDControllerStatus.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-                    <recovery_expression/>
                 </dependency>
             </dependencies>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{Template-SNMP-iDRAC-7-8:GlobalSystemPowerState.last(0)}&lt;&gt;4 and {Template-SNMP-iDRAC-7-8:GlobalSystemPowerState.last(0)}&lt;&gt;0</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>System is not online</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>({Template-SNMP-iDRAC-7-8:VoltageStatusCombined.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-7-8:SystemPowerState.last(0)}=4)</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Voltage Status Error</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
-            <manual_close>1</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
     </triggers>
     <value_maps>

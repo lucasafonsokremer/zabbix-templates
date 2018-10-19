@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.4</version>
-    <date>2018-08-02T16:43:00Z</date>
+    <date>2018-10-19T19:03:22Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -11,16 +11,14 @@
         <template>
             <template>Template-SNMP-iDRAC-9</template>
             <name>Template-SNMP-iDRAC-9</name>
-            <description/>
+            <description>Lucas Afonso Kremer&#13;
+https://www.linkedin.com/in/lucasafonsokremer</description>
             <groups>
                 <group>
                     <name>Templates</name>
                 </group>
             </groups>
             <applications>
-                <application>
-                    <name>Disks / Storage</name>
-                </application>
                 <application>
                     <name>Fans</name>
                 </application>
@@ -32,6 +30,9 @@
                 </application>
                 <application>
                     <name>Power</name>
+                </application>
+                <application>
+                    <name>Storage and disks</name>
                 </application>
                 <application>
                     <name>System Info</name>
@@ -330,7 +331,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Disks / Storage</name>
+                            <name>Storage and disks</name>
                         </application>
                     </applications>
                     <valuemap>
@@ -703,7 +704,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Disks / Storage</name>
+                            <name>Storage and disks</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -744,7 +745,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Disks / Storage</name>
+                            <name>Storage and disks</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -785,7 +786,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Disks / Storage</name>
+                            <name>Storage and disks</name>
                         </application>
                     </applications>
                     <valuemap>
@@ -990,7 +991,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1007,7 +1008,7 @@
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>DiskManufacturer.[{#SNMPINDEX}]</key>
                             <delay>1d</delay>
-                            <history>90d</history>
+                            <history>30d</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
@@ -1032,7 +1033,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1049,8 +1050,8 @@
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.33.{#SNMPINDEX}</snmp_oid>
                             <key>DiskManufactureWeek.[{#SNMPINDEX}]</key>
                             <delay>1d</delay>
-                            <history>90d</history>
-                            <trends>0</trends>
+                            <history>30d</history>
+                            <trends>90d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -1074,7 +1075,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1091,8 +1092,8 @@
                             <snmp_oid>1.3.6.1.4.1.674.10892.5.5.1.20.130.4.1.34.{#SNMPINDEX}</snmp_oid>
                             <key>DiskManufactureYear.[{#SNMPINDEX}]</key>
                             <delay>1d</delay>
-                            <history>90d</history>
-                            <trends>0</trends>
+                            <history>30d</history>
+                            <trends>90d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -1116,7 +1117,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1158,7 +1159,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1200,7 +1201,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1242,7 +1243,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1284,7 +1285,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1331,7 +1332,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap>
@@ -1375,7 +1376,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap>
@@ -1393,7 +1394,7 @@
                             <expression>({Template-SNMP-iDRAC-9:DiskStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Problem with Disk {#SNMPINDEX}</name>
+                            <name>{HOST.NAME}: Problem with Disk {#SNMPINDEX}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -1534,7 +1535,7 @@
                             <expression>({Template-SNMP-iDRAC-9:FanStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Problem with FAN {#SNMPVALUE}</name>
+                            <name>{HOST.NAME}: Problem with FAN {#SNMPVALUE}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -1881,11 +1882,11 @@
                             <expression>({Template-SNMP-iDRAC-9:MemStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Problem with memory in slot {#SNMPVALUE}</name>
+                            <name>{HOST.NAME}: Problem with memory in slot {#SNMPVALUE}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
-                            <status>1</status>
+                            <status>0</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
@@ -2147,30 +2148,14 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>({Template-SNMP-iDRAC-9:NetConnStatus.[{#SNMPINDEX}].diff(0)}=1) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
-                            <name>Connection Status has changed on NIC {#SNMPINDEX}</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
-                            <url/>
-                            <status>1</status>
-                            <priority>2</priority>
-                            <description/>
-                            <type>0</type>
-                            <manual_close>0</manual_close>
-                            <dependencies/>
-                            <tags/>
-                        </trigger_prototype>
-                        <trigger_prototype>
                             <expression>({Template-SNMP-iDRAC-9:NetStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Error on NIC {#SNMPINDEX}</name>
+                            <name>{HOST.NAME}: Error on NIC {#SNMPINDEX}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
-                            <status>1</status>
+                            <status>0</status>
                             <priority>5</priority>
                             <description/>
                             <type>0</type>
@@ -2442,11 +2427,11 @@
                             <expression>({Template-SNMP-iDRAC-9:PowerSupplySensorState.[{#SNMPINDEX}].last(0)}&lt;&gt;1) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Error on PSU {#SNMPINDEX} State</name>
+                            <name>{HOST.NAME}: Error on PSU {#SNMPINDEX} State</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
-                            <status>1</status>
+                            <status>0</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
@@ -2458,11 +2443,11 @@
                             <expression>({Template-SNMP-iDRAC-9:PowerSupplyStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Problem with PSU {#SNMPINDEX}</name>
+                            <name>{HOST.NAME}: Problem with PSU {#SNMPINDEX}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
-                            <status>1</status>
+                            <status>0</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
@@ -2554,18 +2539,18 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>({Template-SNMP-iDRAC-9:ProcStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3 and {Template-SNMP-iDRAC-9:ProcStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;2) or ({Template-SNMP-iDRAC-9:ProcStatus.[{#SNMPINDEX}].last(86400)}&lt;&gt;2 and {Template-SNMP-iDRAC-9:ProcStatus.[{#SNMPINDEX}].last(0)}=2) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
+                            <expression>({Template-SNMP-iDRAC-9:ProcStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:ProcStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;2) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Error on Processor {#SNMPINDEX}</name>
+                            <name>{HOST.NAME}: Error on Processor {#SNMPINDEX}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
-                            <status>1</status>
+                            <status>0</status>
                             <priority>5</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>0</manual_close>
+                            <manual_close>1</manual_close>
                             <dependencies/>
                             <tags/>
                         </trigger_prototype>
@@ -3097,7 +3082,7 @@ and&#13;
                             <expression>({Template-SNMP-iDRAC-9:VoltageStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Error on Voltage Sensor {#SNMPVALUE}</name>
+                            <name>{HOST.NAME}: Error on Voltage Sensor {#SNMPVALUE}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -3178,7 +3163,7 @@ and&#13;
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap>
@@ -3222,7 +3207,7 @@ and&#13;
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -3264,7 +3249,7 @@ and&#13;
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -3311,7 +3296,7 @@ and&#13;
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap>
@@ -3355,7 +3340,7 @@ and&#13;
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Disks / Storage</name>
+                                    <name>Storage and disks</name>
                                 </application>
                             </applications>
                             <valuemap>
@@ -3373,11 +3358,11 @@ and&#13;
                             <expression>({Template-SNMP-iDRAC-9:VolumeDiskState.[{#SNMPINDEX}].last(0)}&lt;&gt;2) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Volume {#SNMPINDEX} Error</name>
+                            <name>{HOST.NAME}: Volume {#SNMPINDEX} Error</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
-                            <status>1</status>
+                            <status>0</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
@@ -3389,11 +3374,11 @@ and&#13;
                             <expression>({Template-SNMP-iDRAC-9:VolumeStatus.[{#SNMPINDEX}].last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Volume {#SNMPINDEX} Status Error</name>
+                            <name>{HOST.NAME}: Volume {#SNMPINDEX} Status Error</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
-                            <status>1</status>
+                            <status>0</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
@@ -3415,26 +3400,10 @@ and&#13;
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template-SNMP-iDRAC-9:GlobalSystemStatus.nodata(86400)}</expression>
+            <expression>{Template-SNMP-iDRAC-9:GlobalSystemStatus.nodata(600)}</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>No iDrac data for &gt; 1 Day</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>5</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>{Template-SNMP-iDRAC-9:GlobalSystemStatus.nodata(3600)}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>No iDrac data for &gt; 1 hour</name>
+            <name>{HOST.NAME}: No iDrac data for 10 minutes</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -3442,23 +3411,7 @@ and&#13;
             <priority>4</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>{Template-SNMP-iDRAC-9:GlobalSystemStatus.nodata(600)}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>No iDrac data for &gt; 10 minutes</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>2</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>0</manual_close>
+            <manual_close>1</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
@@ -3466,7 +3419,7 @@ and&#13;
             <expression>({Template-SNMP-iDRAC-9:GlobalSystemStatus.last()}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:GlobalSystemStatus.last()}&lt;5)</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Overall System Status Error</name>
+            <name>{HOST.NAME}: Overall System Status Error</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -3474,7 +3427,7 @@ and&#13;
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
+            <manual_close>1</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
@@ -3482,7 +3435,7 @@ and&#13;
             <expression>({Template-SNMP-iDRAC-9:GlobalSystemStatus.last()}&gt;4)</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Overall System Status Error</name>
+            <name>{HOST.NAME}: Overall System Status Error</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -3490,7 +3443,7 @@ and&#13;
             <priority>5</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
+            <manual_close>1</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
@@ -3498,7 +3451,7 @@ and&#13;
             <expression>{Template-SNMP-iDRAC-9:CMOSBatteryStatus.last(0)}&lt;&gt;3</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Problem with CMOS Battery</name>
+            <name>{HOST.NAME}: Problem with CMOS Battery</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -3506,7 +3459,7 @@ and&#13;
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
+            <manual_close>1</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
@@ -3514,15 +3467,15 @@ and&#13;
             <expression>({Template-SNMP-iDRAC-9:RAIDControllerStatus.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>RAID Controller Error</name>
+            <name>{HOST.NAME}: RAID Controller Error</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
+            <manual_close>1</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
@@ -3530,15 +3483,15 @@ and&#13;
             <expression>({Template-SNMP-iDRAC-9:GlobalSystemStorageStatus.last(0)}&gt;4) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Storage System Status Error</name>
+            <name>{HOST.NAME}: Storage System Status Error</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
+            <manual_close>1</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
@@ -3546,18 +3499,18 @@ and&#13;
             <expression>{Template-SNMP-iDRAC-9:GlobalSystemStorageStatus.last(0)}&lt;&gt;3</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Storage System Status Error</name>
+            <name>{HOST.NAME}: Storage System Status Error</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
+            <manual_close>1</manual_close>
             <dependencies>
                 <dependency>
-                    <name>RAID Controller Error</name>
+                    <name>{HOST.NAME}: RAID Controller Error</name>
                     <expression>({Template-SNMP-iDRAC-9:RAIDControllerStatus.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
                     <recovery_expression/>
                 </dependency>
@@ -3568,23 +3521,7 @@ and&#13;
             <expression>{Template-SNMP-iDRAC-9:GlobalSystemPowerState.last(0)}&lt;&gt;4 and {Template-SNMP-iDRAC-9:GlobalSystemPowerState.last(0)}&lt;&gt;0</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>System is not online</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>1</status>
-            <priority>4</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>({Template-SNMP-iDRAC-9:VoltageStatusCombined.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>Voltage Status Error</name>
+            <name>{HOST.NAME}: System is not online</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -3592,7 +3529,23 @@ and&#13;
             <priority>4</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>({Template-SNMP-iDRAC-9:VoltageStatusCombined.last(0)}&lt;&gt;3) and ({Template-SNMP-iDRAC-9:SystemPowerState.last(0)}=4)</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>{HOST.NAME}: Voltage Status Error</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
